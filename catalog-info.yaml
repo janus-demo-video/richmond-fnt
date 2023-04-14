@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "richmond-fnt"
+  annotations:
+    argocd/app-name: richmond-fnt-dev
+    backstage.io/kubernetes-id: richmond-fnt
+    github.com/project-slug: janus-demo-video/richmond-fnt
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - java
+    - quarkus
+  links:
+    - url: https://devspaces.apps.cluster-btx9f.btx9f.sandbox3111.opentlc.com/#https://github.com/janus-demo-video/richmond-fnt?che-editor=che-incubator/che-code/insiders&devfilePath=.devfile-vscode.yaml
+      title: CodeReady Workspaces (VS Code)
+      icon: web
+    - url: https://devspaces.apps.cluster-btx9f.btx9f.sandbox3111.opentlc.com/#https://github.com/janus-demo-video/richmond-fnt?che-editor=che-incubator/che-idea/next&devfilePath=.devfile-intellij.yaml
+      title: CodeReady Workspaces (JetBrains IntelliJ)
+      icon: web
+spec:
+  type: service
+  lifecycle: production
+  owner: "rva"
